@@ -1,0 +1,22 @@
+def replace_first_element(lst):
+   
+    if len(lst) > 0:
+        lst[0] = "X"
+        print(f"Updated list after replacing the first element: {lst}")
+    else:
+        print("The list is empty, so the first element cannot be replaced!")
+
+n = int(input("Enter the size of the list: "))
+
+
+user_list = []
+for i in range(1, n + 1):
+    num = int(input(f"Enter element {i}: "))
+    user_list.append(num)
+
+print(f"Original list: {user_list}")
+
+
+
+
+replace_first_element(user_list)
